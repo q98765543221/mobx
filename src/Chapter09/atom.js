@@ -44,6 +44,7 @@ export const AtomExample = asComponent(() => {
         }
 
         get() {
+            console.log('get');
             this.atom.reportObserved();
             return new Date();
         }
